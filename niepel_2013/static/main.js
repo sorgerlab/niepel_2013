@@ -3,12 +3,10 @@ jQuery(document).ready(
 
         var $sb = $('.sibling-browser');
         $sb.mouseenter(function() {
-            $('.sibling-browser-list', this).stop().slideDown(400, function() {
-                $(this).css('overflow','visible');
-            });
+            $(this).find('.sibling-browser-list').css('visibility', 'visible');
         });
         $sb.mouseleave(function() {
-            $('.sibling-browser-list', this).stop().slideUp(400);
+            $(this).find('.sibling-browser-list').css('visibility', 'hidden');
         });
 
         var $hotspots = $('.lookup-table-hotspot');

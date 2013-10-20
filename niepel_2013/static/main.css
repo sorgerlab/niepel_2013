@@ -31,7 +31,7 @@ h2 {
   top: 0;
 }
 .sibling-browser-list {
-  display: none;
+  visibility: hidden;
 }
 .sibling-browser > li{
   position:relative;         !important;
